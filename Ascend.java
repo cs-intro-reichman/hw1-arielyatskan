@@ -3,14 +3,13 @@
 public class Ascend {
 	public static void main(String[] args) {
 		int lim  = Integer.parseInt(args[0]);
-		int num1 = (int) (Math.random() * (lim + 1));
-		int num2 = (int) (Math.random() * (lim + 1));
-		int num3 = (int) (Math.random() * (lim + 1));
-		System.out.println(num1 + " " + num2 + " " + num3);
-		int min = Math.min(num1, (Math.min(num2, num3)));
-		int max = Math.max(num1, (Math.max(num2, num3)));
-		int mid = (num1 + num2 + num3) - (max + min); // In order to isolate the mid number, 
-		                                              // similar to do (a+b+c)-(b+c)=a.
+		int a = (int) (Math.random() * (lim + 1));
+		int b = (int) (Math.random() * (lim + 1));
+		int c = (int) (Math.random() * (lim + 1));
+		System.out.println(a + " " + b + " " + c);
+		int min = Math.min(a, (Math.min(b, c)));
+		int max = Math.max(a, (Math.max(b, c)));
+		int mid = (a + b + c) - (max + min); 
 		System.out.println(min + " " + mid + " " + max);
 	}
 }
