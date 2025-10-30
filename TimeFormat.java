@@ -21,6 +21,10 @@ public class TimeFormat {
 			}			
 			ampm = "pm";
 		}
-		System.out.println(hours + ":" + minutes + " " + ampm);
+		if(minutes > 10){
+			System.out.println(hours + ":" + minutes + " " + ampm);
+		} else {
+			System.out.println(hours + ":0" + minutes + " " + ampm);
+		}
 	}
 }
